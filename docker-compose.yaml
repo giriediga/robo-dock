@@ -34,19 +34,19 @@ services:
   #   image: redis
   #   container_name: redis
 
-  # user:
-  #   image: user:1
-  #   container_name: user
-  #   depends_on:
-  #   - redis
-  #   - mongodb
+  user:
+    image: user:1
+    container_name: user
+    depends_on:
+    - redis
+    - mongodb
 
-  # cart:
-  #   image: cart:1
-  #   container_name: cart
-  #   depends_on:
-  #   - redis
-  #   - catalogue
+  cart:
+    image: cart:1
+    container_name: cart
+    depends_on:
+    - redis
+    - catalogue
 
   # mysql:
   #   image: mysql:1
