@@ -25,14 +25,14 @@ services:
     - "80:80"
     depends_on:
     - catalogue
-  #   - cart
-  #   - user
+    - cart
+    - user
   #   - shipping
   #   - payment
 
    redis:
-  #   image: redis
-  #   container_name: redis
+    image: redis
+     container_name: redis
 
   user:
     image: user:1
