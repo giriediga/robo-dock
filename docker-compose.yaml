@@ -12,10 +12,10 @@ services:
   mongodb:
     image: mongodb:v1
     container_name: mongodb
-    volumes:
-    - source: mongodb
-      target: /data/db
-      type: volume
+    # volumes:
+    # - source: mongodb
+    #   target: /data/db
+    #   type: volume
     # networks:
     # - roboshop
 
@@ -42,10 +42,10 @@ services:
   redis:
     image: redis
     container_name: redis
-    volumes:
-    - source: redis
-      target: /data
-      type: volume
+    # volumes:
+    # - source: redis
+    #   target: /data
+    #   type: volume
 
   user:
     image: user:v1
